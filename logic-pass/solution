@@ -1,0 +1,29 @@
+#Q1
+def character_remove(q1,q2):
+    print(q1.replace(q2,''))
+q1=input("enter the string:")
+q2=input("enter the character you want to remove: ")
+character_remove(q1,q2)
+
+
+#Q2 
+first = int(input("Enter the starting range:"))
+end = int(input("Enter the end range: "))
+print("Prime numbers in the range", first, "to", end)
+for i in range(first, end + 1):
+    flag = 0
+    for j in range(2, i):
+        if (i % j == 0):
+            flag = 1
+            break
+    if (flag == 0):
+        print(i, end=' ')
+
+#Q3
+string = input ( " enter a string " )
+st = [ ]
+for data in string :
+       if data not in st :
+            st.append ( data )
+for char in st :
+       print ( char , " " , string.count ( char ) , " times " )
